@@ -32,35 +32,32 @@ class RootApp extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             ElevatedButton(
-                onPressed: () {
-                  // 添加默认样式的水印
-                  _plugin.addWatermark(context, "默认水印",
-                      rowCount: 4, columnCount: 8);
-                },
+                onPressed: () =>
+                    // 添加默认样式的水印
+                    _plugin.addWatermark(context, "默认水印",
+                        rowCount: 4, columnCount: 8),
                 child: const Text("添加默认水印")),
             ElevatedButton(
-                onPressed: () {
-                  // 添加自定义widget当做水印
-                  _plugin.addCustomWatermark(context,
-                      const Watermark(rowCount: 3, columnCount: 10, text: "自定义水印"));
-                },
+                onPressed: () =>
+                    // 添加自定义widget当做水印
+                    _plugin.addCustomWatermark(
+                        context,
+                        const Watermark(
+                            rowCount: 3, columnCount: 10, text: "自定义水印")),
                 child: const Text("添加自定义水印")),
             ElevatedButton(
-                onPressed: () {
-                  // 移除水印
-                  _plugin.removeWatermark();
-                },
+                onPressed: () =>
+                    // 移除水印
+                    _plugin.removeWatermark(),
                 child: const Text("删除水印")),
             ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                      builder: (_) => Scaffold(
-                            appBar: AppBar(
-                              title: const Text("我是新页面"),
-                            ),
-                            body: const Center(child: Text("new page")),
-                          )));
-                },
+                onPressed: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (_) => Scaffold(
+                          appBar: AppBar(
+                            title: const Text("我是新页面"),
+                          ),
+                          body: const Center(child: Text("new page")),
+                        ))),
                 child: const Text("进入新页面"))
           ],
         ),
