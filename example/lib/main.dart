@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:watermark/watermark.dart';
+import 'package:watermark/flutter_watermark.dart';
 
 void main() {
   runApp(const MyApp());

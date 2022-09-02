@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'watermark_widget.dart';
+import 'flutter_watermark_widget.dart';
 
 class DisableScreenshots {
   static final DisableScreenshots _singleton = DisableScreenshots._internal();

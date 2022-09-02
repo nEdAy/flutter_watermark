@@ -2,7 +2,7 @@ A new Flutter package helps you add watermarks globally.
 
 ## Screenshot
 
-![watermark](screenshot/screenshot.png)
+![flutter_watermark](screenshot/screenshot.png)
 
 ## Usage
 
