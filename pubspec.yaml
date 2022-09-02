@@ -1,7 +1,7 @@
 name: watermark
 description: A new Flutter package helps you add watermarks globally.
 version: 0.0.1
-homepage:
+homepage: https://github.com/nEdAy/flutter_watermark
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
