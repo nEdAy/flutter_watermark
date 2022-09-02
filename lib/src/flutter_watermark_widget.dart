@@ -29,8 +29,8 @@ class DisableScreenshotsWatermark extends StatelessWidget {
     for (var i = 0; i < columnCount; i++) {
       final widget = Expanded(
           child: Row(
-            children: _createRowWidgets(),
-          ));
+        children: _createRowWidgets(),
+      ));
       list.add(widget);
     }
     return list;
