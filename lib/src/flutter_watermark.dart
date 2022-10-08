@@ -43,7 +43,11 @@ class DisableScreenshots {
       _overlayEntry!.remove();
     }
     OverlayState? overlayState = Overlay.of(context);
-    _overlayEntry = OverlayEntry(builder: (context) => widget);
+    _overlayEntry = OverlayEntry(
+      builder: (context) => IgnorePointer(//忽略自定义水印的点击事件
+        child: widget,
+      ),
+    );
     overlayState?.insert(_overlayEntry!);
   }
 
